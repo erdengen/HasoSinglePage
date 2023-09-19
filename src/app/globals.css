@@ -18,10 +18,62 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
+}
+h1 {
+  font-family: var(--font-inter);
+  @apply w-full block text-center font-bold tracking-wider text-2xl;
+}
+h2{
+  @apply w-full block text-center font-bold tracking-wider text-2xl;
+}
+.btnBlue {
+  @apply  text-sm font-medium rounded-lg text-white bg-hasoBlue-500 px-8 py-3;
+}
+
+.slick-slider{
+  
+}
+.slick-slider .slick-prev {
+   
+  z-index: 1;
+  
+}
+.slick-slider .slick-prev::before{
+  color:#BEBEBE;
+}
+.slick-slider .slick-next {
+    
+  z-index: 1;
+  
+}
+.slick-slider .slick-next::before{
+  color:#BEBEBE;
+}
+.slick-slider .slick-arrow::before{
+  font-size: 1.8rem;
+}
+
+.hucre {
+  background: #f5f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+}
+.article {
+  position: relative;
+  clear: both;
+  height: 100%;
+ 
+}
+
+
+.article::after{
+content: '';
+clear: both;
+
+}
+
+@media (max-width: 768px) {
+  h1,h2 {
+    @apply text-lg
+  }
 }
