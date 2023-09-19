@@ -17,7 +17,7 @@ const SlickSlider = (props: Props) => {
     },
     {
       title:
-        "HASSSSO ile ihtiyaçlarını kredi kartın olsun ya da olmasın Hemen Al, bir ay sonra değişen taksit seçenekleriyle ödemeye başla!",
+        "HASSO ile ihtiyaçlarını kredi kartın olsun ya da olmasın Hemen Al, bir ay sonra değişen taksit seçenekleriyle ödemeye başla!",
       imageVideo: Assets.img.sliderpink,
       image: Assets.img.mobile_adam,
     },
