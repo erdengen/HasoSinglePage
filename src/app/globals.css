@@ -18,7 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  
+  @apply text-base;
 }
 h1 {
   font-family: var(--font-inter);
@@ -32,7 +32,7 @@ h2{
 }
 
 .slick-slider{
-  
+  @apply w-full;
 }
 .slick-slider .slick-prev {
    
@@ -73,7 +73,31 @@ clear: both;
 }
 
 @media (max-width: 768px) {
+  body{
+    @apply text-sm
+  }
   h1,h2 {
     @apply text-lg
   }
+  .slick-slider .slick-next {
+    right: 3px;
+  }
+  .slick-slider .slick-prev {
+    left: -5px;
+}
+.hucre2 {
+  @apply bg-hasoBlue-500 text-white;
+}
+.slidernew .slick-slide:not(.slick-active) div.hucre2:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  background: rgba(255,255,255);
+  
+}
 }

@@ -7,6 +7,7 @@ import benefitOneImg from "@/assets/sepet_icon.svg";
 import Image from "next/image";
 import Kutucuk from "@/components/misc/Kutucuk";
 import HizliBasit from "@/components/misc/HizliBasit";
+import TeaserSlider from "@/components/slider/TeaserSlider";
 //union
 export default function Home() {
   return (
@@ -17,17 +18,17 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[#dce4f1] lg:min-h-[968px]">
-        <div className="container xl:max-w-[1348px] mx-auto px-4 text-hasoBlue-500 my-24">
+        <div className="container xl:max-w-[1348px] mx-auto px-4 text-hasoBlue-400 my-24">
           <div className="article">
-            <div className="absolute text-white bg-[url('/img/44.svg')] bg-no-repeat bg-hasoBlue-500 w-full min-h-[296px]  rounded-lg  flex flex-col justify-start items-center ">
+            <div className="lg:absolute text-white bg-[url('/img/44.svg')] bg-no-repeat bg-hasoBlue-300 w-full lg:min-h-[296px]  rounded-t-lg lg:rounded-lg  flex flex-col justify-start items-center ">
               <div className="w-full  text-center text-lg font-medium  tracking-wider mt-5">
                 Hızlı <span className="font-thin ">ve</span> Basit
               </div>
-              <div className="w-full  text-center text-base font-thin ">
+              <div className="w-full  text-center text-base font-thin  mb-5 lg:mb-1">
                 Tıkla, hemen limitini öğren ve alışverişini tamamla!
               </div>
             </div>
-            <div className="flex flex-col lg:flex-row gap-5  z-20 top-32 w-full lg:px-10 absolute">
+            <div className="flex flex-col lg:flex-row gap-5  z-20 top-32 w-full lg:px-10 lg:absolute">
               <HizliBasit
                 title={"Kredi Kartın mı Yok? Dert Etme!"}
                 desc="Kredi kartın olmasa da alışverişini hemen yap, vade gününde
@@ -53,15 +54,30 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white py-10 bg-[url('/img/bg-red.png')] bg-no-repeat  bg-left-top bg-cover  ">
+      <div className="bg-white py-10 bg-gradient-to-b from-gray-200 to-transparent bg-no-repeat  bg-left-top bg-cover  ">
         <div className="container xl:max-w-[1348px] mx-auto px-4 text-hasoBlue-500">
-          <div className="flex flex-col font-thin text-center">
+          <div className="flex flex-col font-medium text-center">
             <h1 className="w-full block text-center font-bold tracking-wider text-2xl">
               Hemen Al Sonra Öde
             </h1>
             <p>Nasıl Kullanılır?</p>
           </div>
-          <div className="grid grid-cols-4 gap-4 mt-10">
+          <div className="flex flex-col gap-5 lg:hidden mt-10">
+            <div className="">
+              <div className="w-full flex mx-auto text-center items-center justify-center">
+                <Image
+                  src={Assets.img.phone_limit}
+                  width={300}
+                  height={450}
+                  alt="Picture of the author"
+                />
+              </div>
+            </div>
+            <div className="w-full">
+              <TeaserSlider />
+            </div>
+          </div>
+          <div className="hidden lg:grid grid-cols-4 gap-4 mt-10 ">
             <div className="flex flex-col gap-10">
               <Kutucuk
                 desc="Sana uygun ürünleri sepetine ekle"
@@ -104,7 +120,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[#dce4f1]">
+      <div className="bg-[#dce4f1] w-full mx-auto pb-16">
         <div className="container xl:max-w-[1348px] mx-auto px-4 ">
           <SslAccordion />
         </div>

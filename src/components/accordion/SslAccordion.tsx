@@ -6,10 +6,10 @@ import AccordionLayout from "./AccordionLayout";
 type Props = {};
 
 const SslAccordion = (props: Props) => {
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0);
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-5 p-16">
+      <div className="flex flex-col justify-center items-center gap-5 p-5 lg:p-16">
         <p className="text-center text-black text-[15px] leading-5 font-medium">
           HASO ile Kredi Kartın Olsun ya da Olmasın
           <br />
@@ -18,13 +18,13 @@ const SslAccordion = (props: Props) => {
         </p>
         <button className="btnBlue">Hemen Limitini Öğren!</button>
       </div>
-      <h3 className="bg-[url('/img/Intersect.png')] bg-hasoBlue-300 bg-no-repeat text-white font-semibold rounded-lg px-6 py-3 my-3 text-xl tracking-wider">
+      <h3 className="bg-[url('/img/Intersect.png')] bg-hasoBlue-300 bg-no-repeat text-white font-semibold rounded-lg px-6 py-3 my-3 text-sm lg:text-xl tracking-wider">
         HASO SSS (Sıkça Sorulan Sorular)
       </h3>
       {sslData.map((x, i) => (
         <div
           key={i}
-          className="flex flex-col w-full justify-start items-center p-6 mb-5 bg-white rounded-lg"
+          className="flex flex-col w-full justify-start items-center p-3 lg:p-6 mb-5 bg-white rounded-lg"
         >
           <AccordionLayout
             title={x.title}

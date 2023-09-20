@@ -10,7 +10,7 @@ type Props = {
   icons?: string;
 };
 import benefitOneImg from "@/assets/sepet_icon.svg";
-const Kutucuk = ({
+const KutucukSlider = ({
   image,
   title,
   desc,
@@ -19,7 +19,7 @@ const Kutucuk = ({
 }: Props) => {
   return (
     <>
-      <div className="rounded-lg hucre w-full min-h-[185px] lg:min-h-[64px] flex flex-col justify-center items-center gap-5 p-2 lg:py-10 lg:px-5">
+      <div className="rounded-lg hucre2 w-full min-h-[185px] lg:min-h-[64px] flex flex-col justify-center items-center gap-5 p-2 lg:py-10 lg:px-5">
         <div className="text-white lg:text-hasoBlue-500 flex flex-col justify-center items-center gap-2">
           <div>
             <Image
@@ -51,4 +51,4 @@ const Kutucuk = ({
   );
 };
 
-export default Kutucuk;
+export default KutucukSlider;

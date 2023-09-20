@@ -13,7 +13,7 @@ type Props = {
 const HizliBasit = ({ title, desc, imageSrc, type = true }: Props) => {
   return (
     <>
-      <div className="hucre rounded-lg w-full p-5 flex flex-col">
+      <div className="hucre rounded-t-lg lg:rounded-lg  w-full p-5 flex flex-col">
         <div className={`flex flex-col gap-5 ${type ? "order-1" : "order-2"}`}>
           <h1 className="w-full block text-center font-bold tracking-wider text-lg">
             {title}
