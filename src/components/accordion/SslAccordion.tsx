@@ -9,7 +9,7 @@ const SslAccordion = (props: Props) => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-5 p-5 lg:p-16">
+      <div className="flex flex-col justify-center items-center gap-5 p-5 lg:p-14">
         <p className="text-center text-black text-[15px] leading-5 font-medium">
           HASO ile Kredi Kartın Olsun ya da Olmasın
           <br />
